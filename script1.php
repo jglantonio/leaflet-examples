@@ -6,16 +6,16 @@
 <div class="container">
     <div id="row">
         <div class="col-md-12">
-            <h1>Lat and lang in map</H1>
+            <h1>Marks in static map</H1>
         </div>
         <div class="col-md-12">
             <div class="col-md-6 p-0">
                 <div id="mapEurope">
                 </div>
-            <div>
+            </div>
             <div class="col-md-6 p-0">
-             <div id="position">
-        </div>
+                <div id="position">
+                </div>
             <div>
         <div>
     </div>
@@ -25,7 +25,7 @@
         // Init map
         // L.map('<id>').setview(latlng center , initialzoom)
         
-        var mymap = L.map('mapEurope').setView([50,50], 0);
+        var mymap = L.map('mapEurope').setView([61.85,224.3], 0);
         
         // Define conners of the map
         var bounds = [[0,0], [400,400]]; // corner 1 and conner 2
