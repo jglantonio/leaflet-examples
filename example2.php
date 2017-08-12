@@ -13,10 +13,6 @@
                 <div id="mapEurope">
                 </div>
             <div>
-            <div 
-                class= "col-md-6"
-                id="position">
-            <div>
         <div>
     </div>
     
@@ -32,16 +28,26 @@
         
         // Init , static map
         var image = L.imageOverlay('img/map_europe.png', bounds).addTo(mymap);
-        
-        var sol = L.latLng([ 10, 10 ]);
-        
-        L.marker(sol).addTo(mymap);
-        
-        mymap.setView( [70, 120], 1);
+        var points = [
+            [
+                [ 24.44 , 48.3], "Spain"
+            ],
+            [
+                [ 40.95  , 28.02], " Galiza"
+            ],
+            [
+                [ 27.95 , 19.93], " Portugal"
+            ],
+            [
+                [49.12,113.09 ], " France"
+            ],
+        ];
+        var sol = L.latLng(points);
 
-        mymap.on('click', function(e) {
-            html = "Lat : " + e.latlng.lat + " <br> , Lon :" + e.latlng.lng;
-            $('#position').append(html);
+        $.each(points,function(){
+            L.marker(this[0]).addTo(mymap)
+		        .bindPopup(this[1]).openPopup();
+        
         });
     </script>
 </div>
