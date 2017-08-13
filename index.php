@@ -22,7 +22,7 @@
                 </li>
                 <li>
                     <a href ="./example3.php">Deliminter zones in the map </a> : 
-                    <p>In this map , we can watch delimiter zones in the map</p>
+                    <p>In this map , we can watch delimiter zones in the map , and add layer dinamicly</p>
                 </li>
             </ul>
             <div id="col-md-12">
