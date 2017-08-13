@@ -13,7 +13,7 @@
             <ul>
                 <li><a href ="./example1.php">Static map </a> 
                     <p>
-                        Example static map leaflet, europe map white
+                        Example static map leaflet , europe map white
                     </p>
                 </li>
                 <li>

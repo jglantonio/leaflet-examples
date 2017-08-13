@@ -40,7 +40,7 @@
         var size = zonesWW1.length;
         for(var x = 0 ; x < size ; x++){
             var polygon = L.polygon(zonesWW1[x]).addTo(mymap);
-            polygon.bindPopup(layers[0].toString());  
+            polygon.bindPopup(layersWW1[0].toString());  
         }
         
         mymap.on('click', function(e){
