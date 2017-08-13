@@ -25,13 +25,6 @@
                     <p>In this map , we can watch delimiter zones in the map , and add layer dinamicly</p>
                 </li>
             </ul>
-            <div id="col-md-12">
-            <h2> Scripts , ¡They are comming , in our help!</h2>
-            <ul>
-                <li>
-                    <a href ="./script1.php">Show lat and lang </a>
-                </li>
-            </ul>
         </div>
     </div>
     
