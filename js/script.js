@@ -1,0 +1,5 @@
+var leafletScript = {
+     getPoligon: function(){
+         
+     }
+};
