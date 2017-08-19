@@ -14,3 +14,8 @@ var layersWW1 = [
     // Spain
     ["My president is Manuel García <img src='../img/manuel.jpg' id='boss'/>"]
 ]
+var zoneTags = [
+    [
+        [76.43,186.46],[66.93,227.59],[38.54,212.83],[36.87,150.25],[68.53,142.16]
+    ]
+]

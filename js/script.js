@@ -3,8 +3,8 @@ var leafletScript = {
     zone : [],
     setPointToZone : function(e){
        this.zone.push(
-           this.roundPoint(e.latlng.lat,100),
-           this.roundPoint(e.latlng.lng,100)
+           [this.roundPoint(e.latlng.lat,100),
+           this.roundPoint(e.latlng.lng,100)]
        );
     },
     roundPoint : function(point,value){
