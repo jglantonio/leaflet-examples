@@ -1,6 +1,25 @@
-<?php
-    include('../header.php')
-?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <title>Example use Leaflet</title>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../js/leaflet/leaflet.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="../js/leaflet/leaflet.js"/></script>
+    <script type="text/javascript" src="../js/script.js"/></script>
+    <script type="text/javascript" src="../js/zones.js"/></script>
+    <script type="text/javascript" src="../js/boostrap.min.js"/></script>
+            
+</head>
+<body>
+
 
 <div class="container">
     <div id="row">
@@ -35,13 +54,14 @@
         var bounds = [[0,0], [400,400]]; // corner 1 and conner 2
         
         // Init , static map
-        var image = L.imageOverlay('../img/map_europe_ww1.png', bounds).addTo(mymap);
-        var size = zonesWW1.length;
+        var image = L.imageOverlay('../img/figure.png', bounds).addTo(mymap);
+
+        var size = zoneTags.length;
         for(var x = 0 ; x < size ; x++){
-            var polygon = L.polygon(zonesWW1[x]).addTo(mymap);
-            polygon.bindPopup(layersWW1[x].toString());
+            var polygon = L.polygon(zoneTags[x]).addTo(mymap);
+            polygon.bindPopup(zoneTags[x].toString());
         }
-        
+
         mymap.on('click', function(e){
            leafletScript.setPointToZone(e);
            zones = leafletScript.getZone();
@@ -49,7 +69,5 @@
         });
     </script>
 </div>
-
-<?php 
-    include('../footer.php')
-?>
+</body>
+</html>
