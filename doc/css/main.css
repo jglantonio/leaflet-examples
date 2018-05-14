@@ -1,0 +1,17 @@
+body{
+    background-color: white;
+}
+#mapEurope { 
+    border:1px solid black;
+    height: 800px; 
+}
+#position {
+    background-color: ghostwhite;
+    border:1px solid black;
+    height: 100px; 
+    overflow-y: scroll;
+}
+#boss{
+    width: 200px;
+    height: 300px;
+}
